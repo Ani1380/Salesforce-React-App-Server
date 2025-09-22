@@ -9,7 +9,7 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 4321;
 app.use(cors({
-  origin: "https://salesforce-react-app-client.vercel.app/*",
+  origin: "https://salesforce-react-app-client.vercel.app",
   methods: ["GET", "POST", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
 }));
