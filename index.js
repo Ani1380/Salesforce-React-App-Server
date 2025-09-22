@@ -7,7 +7,7 @@ import cache from 'memory-cache';
 
 dotenv.config();
 const app = express();
-const port = 4321;
+const port = process.env.PORT || 4321;
 app.use(cors({
   origin: "*",
   methods: ["GET", "POST", "DELETE"],
