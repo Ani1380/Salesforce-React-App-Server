@@ -41,7 +41,7 @@ export const getAuthToken = async () => {
         return { authToken, instanceURL };
 
     } catch (err) {
-        return err.message;
+        return err.message; 
     }
 }
 

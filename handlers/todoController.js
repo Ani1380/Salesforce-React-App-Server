@@ -25,7 +25,7 @@ export const getToDoList = async (req, res) => {
                                                          WHERE Account__c = '${accountId}'
                                                          ORDER BY Due_Date__c ASC`,
             {
-                headers: { "Authorization": `OAuth ${authToken}` }
+                headers: { "Authorization": `OAuth ${authToken}` } 
             }
         )
         // console.log(`get list URI = ${JSON.stringify(response.data)}`);

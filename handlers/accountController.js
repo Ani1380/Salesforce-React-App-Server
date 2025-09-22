@@ -59,7 +59,7 @@ export const getSFAccount = async (req, res) => {
             console.log(`Created Account 1st time = ${JSON.stringify(createdAccount.data)} + ${createdAccount.status}`);
             accountId = createdAccount.data.id;
         }
-        res.json({ accountId });
+        res.json({ accountId }); 
 
     } catch (error) {
         if (
